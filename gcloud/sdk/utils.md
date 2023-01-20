@@ -1,6 +1,11 @@
-### Inicializar cuenta y proyecto en gcloud sdk
+### Inicializar cuenta y proyecto en gcloud sdk (tambien sirve para crear una nueva confiuracion)
 ~~~
 gcloud init
+~~~
+
+### Cuentas configuradas
+~~~
+gcloud auth list
 ~~~
 
 ### Revisar configuracion
@@ -13,7 +18,17 @@ gcloud config list
 gcloud config configurations list
 ~~~
 
-### Revisar proyectos
+### Activar una configuración
+~~~
+gcloud config configurations activate <NAME>
+~~~
+
+### Eliminar una configuración (antes de hacerlo hay que activar otra configuracion)
+~~~
+gcloud config configurations delete <NAME>
+~~~
+
+### Revisar proyectos asociados a la cuenta configurada
 ~~~
 gcloud projects list
 ~~~
